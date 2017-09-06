@@ -66,29 +66,25 @@ else
   }
 
   function initformulario() {
-    var win = new Window('Administrador', {top:4, left:300, width:520, height:625, zIndex:150, resizable: true, title: "Registro en linea" })
-    win.setURL("https://docs.google.com/forms/d/e/1FAIpQLScNdBoeLHdIZSy8lyv8J4Ou4JkI9ps5xInnjwoIwHUZzEUZtw/viewform");
+    var win = new Window('Administrador', {top:4, left:300, width:520, height:520, zIndex:150, resizable: true, title: "Registro en linea" })
+    win.setURL("login/index.php");
     win.show();
   }
 
   function initmail() {
-    var win = new Window('Nosotros', {top:20, left:300, width:600, height:625, zIndex:160, resizable: true, title: "Nosotros" })
+    var win = new Window('Nosotros', {top:20, left:300, width:550, height:575, zIndex:160, resizable: true, title: "Nosotros" })
     win.setURL("html/nosotros.html");
     win.show();
   }
   
- function initmgaleria() {
-    var win = new Window('Galeria', {top:0, left:150, width:700, height:600, zIndex:160, resizable: true, title: "Galeria" })
-    win.setURL("http://acpespol.ml/acp4/index.php/nosotros/galeria");
-    win.show();
-  }
+ 
 </script>
 
 <!-- End Prototype //-->
 
 </head>
 
-<body onload="initacp()">
+<body onload="initmail()">
 
 <!--<img id="background" src="wallpaper.png" alt="Background-image">//-->
 
@@ -104,11 +100,11 @@ else
 
 <li><a style="margin: 0pt -0.5em;" href="javascript:initACPSOCIAL()" title="Amazonia"><span style="visibility: hidden; opacity: 0.8;" id="desc3" class="desc">Sismos reportados en la amazonia Ecuatoriana</span><img style="height: 32px; width: 32px;" alt="ACPSOCIAL" src="img/amazonia.png"></a></li>
 
-<li><a style="margin: 0pt -0.5em;" href="javascript:initformulario()" title="Registro en linea"><span style="visibility: hidden; opacity: 0.8;" id="desc4" class="desc">Registro en linea</span><img style="height: 32px; width: 32px;" alt="registroenlinea" src="img/registroenlinea.png"></a></li>
+<li><a style="margin: 0pt -0.5em;" href="javascript:initformulario()" title="New"><span style="visibility: hidden; opacity: 0.8;" id="desc4" class="desc">Reporta un sismo</span><img style="height: 32px; width: 32px;" alt="registroenlinea" src="img/new.png"></a></li>
 
 <li><a style="margin: 0pt -0.5em;" href="javascript:initmail()" title="Nosotros"><span style="visibility: hidden;" id="desc5" class="desc">Nosotros</span><img style="height: 32px; width: 32px;" alt="Mail" src="img/nosotros.png"></a></li>
 
-<li><a style="margin: 0pt -0.5em;" href="javascript:initmgaleria()" title="Galeria"><span style="visibility: hidden;" id="desc5" class="desc">Galeria</span><img style="height: 32px; width: 32px;" alt="Mail" src="img/galeria.png"></a></li>
+
 
 
 </ul>
